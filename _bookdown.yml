@@ -9,6 +9,7 @@ rmd_files:
   - 03-method.Rmd
   - 05-summary.Rmd
   - 06-references.Rmd
+  - appendix.Rmd
 output_dir: docs
 language:
   ui:
