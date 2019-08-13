@@ -12,6 +12,7 @@ biblio-style: apalike
 description: A work in progress.
 favicon: images/favicon.ico
 cover-image: images/logo-black.png
+github-repo: dcossyleon/fake_book
 ---
 
 # Prerequisites {-}
