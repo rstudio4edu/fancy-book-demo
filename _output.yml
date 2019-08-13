@@ -1,6 +1,6 @@
 bookdown::gitbook:
   highlight: tango
-  css: style.css
+  css: assets/style.css
   config:
     toc:
       before: |
