@@ -1,15 +1,17 @@
---- 
-title: "A Minimal Book Example"
-author: "Yihui Xie"
-date: "2019-08-09"
+---
+title: A Minimal Book Example
+author: Yihui Xie
+date: 08/09/2019
 site: bookdown::bookdown_site
 documentclass: book
-bibliography: [book.bib, packages.bib]
+bibliography:
+- book.bib
+- packages.bib
+link-citations: true
 biblio-style: apalike
-link-citations: yes
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
-favicon: "images/favicon.ico"
-
+description: A work in progress.
+favicon: images/favicon.ico
+cover-image: images/logo-black.png
 ---
 
 # Prerequisites {-}
