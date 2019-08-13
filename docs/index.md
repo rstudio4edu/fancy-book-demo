@@ -1,6 +1,6 @@
 ---
-title: A Minimal Book Example
-author: Yihui Xie
+title: Demo book
+author: Desiree De Leon
 date: 08/09/2019
 site: bookdown::bookdown_site
 documentclass: book
