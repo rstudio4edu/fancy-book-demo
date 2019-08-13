@@ -8,6 +8,8 @@ bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+favicon: "images/favicon.ico"
+
 ---
 
 # Prerequisites {-}
