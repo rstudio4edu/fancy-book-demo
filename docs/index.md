@@ -33,3 +33,21 @@ Remember each Rmd file contains one and only one chapter, and a chapter is defin
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
 
 
+
+
+:::demo
+This signals a placeholder for when live-coding or another demo is occurring.
+:::
+
+:::puzzle
+This signals an activity or challenge for you to try
+:::
+
+:::note
+This points out a tip that may be useful for a workflow or process
+:::
+
+:::fyi
+This proves more background in case you're interesting in knowing more
+:::
+

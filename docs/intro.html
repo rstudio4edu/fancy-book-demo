@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Introduction | A Minimal Book Example</title>
+  <title>Chapter 1 Introduction | Demo book</title>
   <meta name="description" content="A work in progress." />
   <meta name="generator" content="bookdown 0.12 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Introduction | A Minimal Book Example" />
+  <meta property="og:title" content="Chapter 1 Introduction | Demo book" />
   <meta property="og:type" content="book" />
   
   <meta property="og:image" content="images/logo-black.png" />
@@ -16,12 +16,12 @@
   <meta name="github-repo" content="dcossyleon/fake_book" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Introduction | A Minimal Book Example" />
+  <meta name="twitter:title" content="Chapter 1 Introduction | Demo book" />
   
   <meta name="twitter:description" content="A work in progress." />
   <meta name="twitter:image" content="images/logo-black.png" />
 
-<meta name="author" content="Yihui Xie" />
+<meta name="author" content="Desiree De Leon" />
 
 
 <meta name="date" content="2019-08-09" />
@@ -47,6 +47,7 @@
 
 
 
+<script src="assets/book.js"></script>
 
 
 <style type="text/css">
@@ -111,7 +112,7 @@ code span.vs { color: #4e9a06; } /* VerbatimString */
 code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
-<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
 </head>
 
 <body>
@@ -124,7 +125,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
       <nav role="navigation">
 
 <ul class="summary">
-<li><a href="./">Demo Book</a></li>
+<li class="toc-logo"><a href="./"><img src="images/logo-black.png"></a></li>
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Prerequisites</a></li>
@@ -133,12 +134,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>2</b> Applications</a><ul>
 <li class="chapter" data-level="2.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>2.1</b> Example one</a></li>
 <li class="chapter" data-level="2.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>2.2</b> Example two</a></li>
+<li class="chapter" data-level="2.3" data-path="applications.html"><a href="applications.html#two-plots-side-by-side"><i class="fa fa-check"></i><b>2.3</b> Two plots side-by-side</a></li>
+<li class="chapter" data-level="2.4" data-path="applications.html"><a href="applications.html#include-verbatim-code-chunks"><i class="fa fa-check"></i><b>2.4</b> Include verbatim code chunks</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a><ul>
-<li class="chapter" data-level="3.1" data-path="literature.html"><a href="literature.html#a-level-2-header"><i class="fa fa-check"></i><b>3.1</b> A level 2 header</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="literature.html"><a href="literature.html#a-level-3"><i class="fa fa-check"></i><b>3.1.1</b> A level 3</a></li>
-</ul></li>
-</ul></li>
+<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
 <li class="part"><span><b>Second Semester</b></span></li>
 <li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
 <li class="chapter" data-level="5" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>5</b> Final Words</a></li>
@@ -158,7 +157,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">A Minimal Book Example</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Demo book</a>
           </h1>
         </div>
 
@@ -166,6 +165,10 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
+ <link href="style.css" rel="stylesheet">
+    <div class="hero-image-container"> 
+      <img class= "hero-image" src="images/hero.jpg">
+    </div>
 <div id="intro" class="section level1">
 <h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
 <p>You can label chapter and section titles using <code>{#label}</code> after them, e.g., we can reference Chapter <a href="intro.html#intro">1</a>. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter <a href="methods.html#methods">4</a>.</p>
@@ -369,15 +372,15 @@ Figure 1.1: Here is a nice figure!
 gitbook.require(["gitbook"], function(gitbook) {
 gitbook.start({
 "sharing": {
-"github": false,
-"facebook": true,
+"github": true,
+"facebook": false,
 "twitter": true,
 "google": false,
 "linkedin": false,
 "weibo": false,
 "instapaper": false,
 "vk": false,
-"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+"all": false
 },
 "fontsettings": {
 "theme": "white",
@@ -385,14 +388,14 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": null,
-"text": null
+"link": "https://github.com/dcossyleon/fake_book/edit/master/01-intro.Rmd",
+"text": "Suggest an edit"
 },
 "history": {
 "link": null,
 "text": null
 },
-"download": ["fake_book.pdf", "fake_book.epub"],
+"download": null,
 "toc": {
 "collapse": "subsection"
 }
