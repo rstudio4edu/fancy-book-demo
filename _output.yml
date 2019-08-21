@@ -1,13 +1,15 @@
 bookdown::gitbook:
+  includes:
+    in_header: assets/header.html
+    before_body: assets/hero-image.html
   highlight: tango
-  css: assets/style.css
+  css: "./assets/style.css"
   config:
     toc:
       before: |
-        <li><a href="./">A Minimal Book Example</a></li>
+        <li class="toc-logo"><a href="./"><img src="images/logo-black.png"></a></li>
       after: |
-        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a> <br> CC-BY </li>
-    download: ["rmd"]
+        <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
     edit:
       link: https://github.com/dcossyleon/fake_book/edit/master/%s
       text: "Suggest an edit"
@@ -16,10 +18,3 @@ bookdown::gitbook:
       facebook: no
       twitter: yes
       all: no
-bookdown::pdf_book:
-  includes:
-    in_header: preamble.tex
-  latex_engine: xelatex
-  citation_package: natbib
-  keep_tex: yes
-bookdown::epub_book: default
