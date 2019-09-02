@@ -28,6 +28,13 @@ pre code {
     height: 0px;
 }
 
+/* ----------Code chunk symmetry---------- */
+
+.sourceCode pre {
+  margin: 0 !important; /* makes space above and below symmetrical*/
+}
+
+
 /*------------- Body and header text---------------- */
 
 .book.font-family-1 {
@@ -238,5 +245,8 @@ a.anchor {
       text-transform: uppercase;
     }
     
-  
+/* grabs first .chapter immediately after .part...but only those ch without numbers */
 
+.part + li[data-level=""] { 
+ text-transform: uppercase;
+}
