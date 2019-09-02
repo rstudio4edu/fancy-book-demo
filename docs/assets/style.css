@@ -238,5 +238,8 @@ a.anchor {
       text-transform: uppercase;
     }
     
-  
+/* grabs first .chapter immediately after .part...but only those ch without numbers */
 
+.part + li[data-level=""] { 
+ text-transform: uppercase;
+}
