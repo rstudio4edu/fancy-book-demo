@@ -62,6 +62,9 @@ h1, h2, h3, h4 {
   color: #2c6793;
 }
 
+.subtitle em {/* no italics in subtitle */
+  font-style: normal !important;
+}
 
 /*--- LOGO ---*/
     
